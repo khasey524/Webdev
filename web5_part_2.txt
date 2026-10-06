@@ -1,0 +1,310 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Card</title>
+    <style>
+      * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.main_container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* CARD */
+
+.product-card {
+    margin: 20px;
+    margin-top: 30px;
+    width: 340px;
+    background-color: white;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* IMAGE */
+
+.image-box {
+    width: 100%;
+    height: 260px;
+
+    background-color: #f7f7f7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 90%;
+    height: 90%;
+
+    object-fit: contain;
+
+    transition: transform 0.4s ease;
+}
+
+
+.product-card:hover img {
+    transform: scale(1.06);
+    background-color: rgb(195, 248, 195);
+    
+}
+
+
+/* INFORMATION */
+
+.product-info {
+    padding: 22px;
+}
+
+
+.category {
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 1.5px;
+
+    color: #888;
+
+    margin-bottom: 8px;
+}
+
+
+h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+.description {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+/* PRICE + BUTTON */
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 21px;
+    font-weight: bold;
+    color: #111;
+}
+
+button {
+    border: none;
+
+    background-color: #111;
+    color: white;
+
+    padding: 11px 16px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+
+ @media screen and (max-width: 800px){
+       .main_container{
+       display: grid;
+       grid-template-columns: 1fr;
+     }}
+
+    </style>
+</head>
+
+<body>
+
+   <div class="main_container">  
+               <div class="product-card">
+
+               <div class="image-box">
+                     <img 
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtFF-iAsL66M_YqEVDlTKdi-A-Y5P6S3oEGmOA5Hrog&s=10"
+                        alt="Minimalist running shoes"
+                     >
+               </div>
+
+               <div class="product-info">
+                     <p class="category">RUNNING SHOES</p>
+
+                     <h2>Urban Runner</h2>
+
+                     <p class="description">
+                        Lightweight shoes designed for everyday comfort.
+                     </p>
+
+                     <div class="bottom">
+                        <span class="price">$129</span>
+                        <button>View Product</button>
+                     </div>
+               </div>
+
+            </div>
+            <div class="product-card">
+
+            <div class="image-box">
+                  <img 
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtFF-iAsL66M_YqEVDlTKdi-A-Y5P6S3oEGmOA5Hrog&s=10"
+                     alt="Minimalist running shoes"
+                  >
+            </div>
+
+            <div class="product-info">
+                  <p class="category">RUNNING SHOES</p>
+
+                  <h2>Urban Runner</h2>
+
+                  <p class="description">
+                     Lightweight shoes designed for everyday comfort.
+                  </p>
+
+                  <div class="bottom">
+                     <span class="price">$129</span>
+                     <button>View Product</button>
+                  </div>
+            </div>
+
+         </div>
+         <div class="product-card">
+
+            <div class="image-box">
+                  <img 
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtFF-iAsL66M_YqEVDlTKdi-A-Y5P6S3oEGmOA5Hrog&s=10"
+                     alt="Minimalist running shoes"
+                  >
+            </div>
+
+            <div class="product-info">
+                  <p class="category">RUNNING SHOES</p>
+
+                  <h2>Urban Runner</h2>
+
+                  <p class="description">
+                     Lightweight shoes designed for everyday comfort.
+                  </p>
+
+                  <div class="bottom">
+                     <span class="price">$129</span>
+                     <button>View Product</button>
+                  </div>
+            </div>
+
+         </div>
+         <div class="product-card">
+
+            <div class="image-box">
+                  <img 
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtFF-iAsL66M_YqEVDlTKdi-A-Y5P6S3oEGmOA5Hrog&s=10"
+                     alt="Minimalist running shoes"
+                  >
+            </div>
+
+            <div class="product-info">
+                  <p class="category">RUNNING SHOES</p>
+
+                  <h2>Urban Runner</h2>
+
+                  <p class="description">
+                     Lightweight shoes designed for everyday comfort.
+                  </p>
+
+                  <div class="bottom">
+                     <span class="price">$129</span>
+                     <button>View Product</button>
+                  </div>
+            </div>
+
+         </div>
+         <div class="product-card">
+
+            <div class="image-box">
+                  <img 
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtFF-iAsL66M_YqEVDlTKdi-A-Y5P6S3oEGmOA5Hrog&s=10"
+                     alt="Minimalist running shoes"
+                  >
+            </div>
+
+            <div class="product-info">
+                  <p class="category">RUNNING SHOES</p>
+
+                  <h2>Urban Runner</h2>
+
+                  <p class="description">
+                     Lightweight shoes designed for everyday comfort.
+                  </p>
+
+                  <div class="bottom">
+                     <span class="price">$129</span>
+                     <button>View Product</button>
+                  </div>
+            </div>
+
+         </div>
+         
+       
+        
+            
+   </div>
+
+
+   
+
+</body>
+</html>
